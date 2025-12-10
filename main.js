@@ -35,15 +35,20 @@ const cubeVertices = [
     new Vector3(-1,  1,  1)  // 7
 ];
 
-// Define the 6 faces of the cube using vertex indices
-// Each face is a quadrilateral, defined by 4 vertex indices
+// Define the 12 triangular faces of the cube using vertex indices
 const cubeFaces = [
-    [0, 1, 2, 3], // Front face
-    [1, 5, 6, 2], // Right face
-    [5, 4, 7, 6], // Back face
-    [4, 0, 3, 7], // Left face
-    [3, 2, 6, 7], // Top face
-    [4, 5, 1, 0]  // Bottom face
+    // Front face
+    [0, 1, 2], [0, 2, 3],
+    // Right face
+    [1, 5, 6], [1, 6, 2],
+    // Back face
+    [5, 4, 7], [5, 7, 6],
+    // Left face
+    [4, 0, 3], [4, 3, 7],
+    // Top face
+    [3, 2, 6], [3, 6, 7],
+    // Bottom face
+    [4, 5, 1], [4, 1, 0]
 ];
 
 const cubeMesh = new Mesh(cubeVertices, cubeFaces);
