@@ -16,7 +16,7 @@ The pipeline is implemented in `main.js` and consists of the following key compo
 
 ### Data Structures
 *   `Vector3`: A class representing a point or vector in 3D space (x, y, z).
-*   `Mesh`: A class that holds the geometry of an object, defined by an array of `vertices` and an array of `faces`. Each face is an array of polygons.
+*   `Mesh`: A class that holds the geometry of an object, defined by an array of `vertices` and an array of `faces`.
 
 ### Pipeline Stages
 1.  **Model Transformation (`modelTransform`)**: The cube's vertices are rotated in 3D space. This transforms the object from its local space (centered at the origin) into the "world space".

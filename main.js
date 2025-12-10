@@ -36,6 +36,7 @@ const cubeVertices = [
 ];
 
 // Define the 12 triangular faces of the cube using vertex indices
+// Each of the 6 faces of the cube is made of 2 triangles, so we have 12 triangles in total.
 const cubeFaces = [
     // Front face
     [0, 1, 2], [0, 2, 3],
